@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{3EE9EDA5-17E5-47CD-A6E1-5C9164E2C38B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="KeyVaultTest/appsettings.json">
+    <Files>
+      <File FileName="KeyVaultTest/appsettings.json" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="KeyVaultTest" expanded="True">
+            <Node name="KeyVaultTest" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.KeyVaultTest PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
