@@ -1,13 +1,16 @@
 ﻿<Properties StartupConfiguration="{3EE9EDA5-17E5-47CD-A6E1-5C9164E2C38B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="KeyVaultTest/appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="KeyVaultTest/Program.cs">
     <Files>
-      <File FileName="KeyVaultTest/appsettings.json" Line="1" Column="1" />
+      <File FileName="KeyVaultTest/secrets.sample.json" Line="2" Column="18" />
+      <File FileName="KeyVaultTest/Program.cs" Line="13" Column="73" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="KeyVaultTest" expanded="True">
-            <Node name="KeyVaultTest" expanded="True" />
+            <Node name="KeyVaultTest" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
