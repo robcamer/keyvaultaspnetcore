@@ -1,35 +1,41 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
-
-name: Build and deploy ASP.Net Core app to Azure Web App - testkeyvaultrac
-
+# To configure this workflow:
+#
+# 1. Set up a secret in your repository named AZURE_WEBAPP_PUBLISH_PROFILE_DEV with the value of your Azure publish profile.
+#
+# 2. Change the values for the AZURE_WEBAPP_NAME, AZURE_WEBAPP_PACKAGE_PATH and NODE_VERSION environment variables  (below).
+#
+# For more information on GitHub Actions for Azure, refer to https://github.com/Azure/Actions
+# For more samples to get started with GitHub Action workflows to deploy to Azure, refer to https://github.com/Azure/actions-workflow-samples
+name: Build And Deploy PACT Dev Branch to Dev App Service
 on:
   push:
     branches:
       - master
 
+env:
+  AZURE_WEBAPP_NAME: ’testkeyvaultrac'    # set this to your Azure App Service name
+  AZURE_WEBAPP_PACKAGE_PATH: './KeyVaultTest'      # set this to the path to your web app project, defaults to the repository root
+
 jobs:
   build-and-deploy:
+    name: Build and Deploy
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@master
-
-    - name: Set up .NET Core
+    - uses: actions/checkout@v1
+    - name: Setup .NET Core 3.1
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '3.1.102'
-
+        dotnet-version: 3.1.101
     - name: Build with dotnet
+      working-directory: ${{env.AZURE_WEBAPP_PACKAGE_PATH}}
       run: dotnet build --configuration Release
-
     - name: dotnet publish
-      run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
-
-    - name: Deploy to Azure Web App
+      working-directory: ${{env.AZURE_WEBAPP_PACKAGE_PATH}}
+      run: |
+        dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/keyvaulttest
+    - name: 'Deploy to dev.PactCloud.com'
       uses: azure/webapps-deploy@v1
       with:
-        app-name: 'testkeyvaultrac'
-        slot-name: 'production'
+        app-name: ${{ env.AZURE_WEBAPP_NAME }}
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-        package: ${{env.DOTNET_ROOT}}/myapp 
+        package: ${{env.DOTNET_ROOT}}/keyvaulttest
