@@ -1,14 +1,16 @@
 ﻿<Properties StartupConfiguration="{3EE9EDA5-17E5-47CD-A6E1-5C9164E2C38B}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="KeyVaultTest/Program.cs">
     <Files>
-      <File FileName="KeyVaultTest/secrets.sample.json" Line="2" Column="18" />
-      <File FileName="KeyVaultTest/Program.cs" Line="13" Column="73" />
+      <File FileName="KeyVaultTest/Program.cs" Line="24" Column="1" />
+      <File FileName="KeyVaultTest/PrefixKeyVaultSecretManager.cs" />
+      <File FileName="KeyVaultTest/Controllers/WeatherForecastController.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="KeyVaultTest" expanded="True">
             <Node name="KeyVaultTest" expanded="True">
+              <Node name="Controllers" expanded="True" />
               <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
@@ -20,7 +22,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.KeyVaultTest PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/robcamer/code/gh/robcamer/keyvaultaspnetcore/KeyVaultTest/PrefixKeyVaultSecretManager.cs" relfile="KeyVaultTest/PrefixKeyVaultSecretManager.cs" line="23" column="1" />
+      <Breakpoint file="/Users/robcamer/code/gh/robcamer/keyvaultaspnetcore/KeyVaultTest/PrefixKeyVaultSecretManager.cs" relfile="KeyVaultTest/PrefixKeyVaultSecretManager.cs" line="19" column="1" />
+      <Breakpoint file="/Users/robcamer/code/gh/robcamer/keyvaultaspnetcore/KeyVaultTest/PrefixKeyVaultSecretManager.cs" relfile="KeyVaultTest/PrefixKeyVaultSecretManager.cs" line="14" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

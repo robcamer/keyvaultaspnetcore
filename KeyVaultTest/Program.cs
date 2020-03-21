@@ -40,7 +40,7 @@ namespace KeyVaultTest
                         config.AddAzureKeyVault(
                             $"https://{builtConfig["KeyVaultName"]}.vault.azure.net/",
                             keyVaultClient,
-                            new DefaultKeyVaultSecretManager());
+                            new PrefixKeyVaultSecretManager(builtConfig["EnvPrefix"]));
                     }
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
