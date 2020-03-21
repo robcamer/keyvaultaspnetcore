@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'testkeyvaultrac'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_f6484cefcbf54b17b83161497bfd68cd }}
+        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
         package: ${{env.DOTNET_ROOT}}/myapp 
