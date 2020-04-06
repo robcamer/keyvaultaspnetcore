@@ -233,4 +233,7 @@ _Pvt_Extensions
 
 # Settings
 appsettings.json
-appsettings.development.json
+appsettings.Development.json
+
+# random
+.DS_Store

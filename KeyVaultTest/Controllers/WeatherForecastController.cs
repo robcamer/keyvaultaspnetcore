@@ -36,7 +36,7 @@ namespace KeyVaultTest.Controllers
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),
                 //Summary = Summaries[rng.Next(Summaries.Length)]
-                Summary = _configuration["SecretName"]
+                Summary = _configuration["Section:SecretName"]
             })
             .ToArray();
         }
