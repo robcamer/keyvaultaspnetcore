@@ -27,9 +27,8 @@ jobs:
       run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
     - name: Deploy to Azure Web App
-      uses: azure/webapps-deploy@v1
+      uses: azure/webapps-deploy@v2
       with:
         app-name: 'sfpartnerapp'
-        slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_cf66cba8513946dcbb7d0623d05cd904 }}
         package: ${{env.DOTNET_ROOT}}/myapp 
