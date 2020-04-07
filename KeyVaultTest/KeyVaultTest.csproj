@@ -25,12 +25,11 @@
     <Content Remove="appsettings.sample.Development.json" />
     <Content Remove="appsettings.Development.json" />
     <Content Remove="appsettings.sample.json" />
-    <Content Remove="appsettings.json" />
-    <Content Remove="secrets.sample.json" />
+    <Content Remove="sample.appsettings.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="appsettings.json" />
+    <None Include="sample.appsettings.json" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
