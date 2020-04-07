@@ -7,6 +7,5 @@
     }
   },
   "AllowedHosts": "*",
-  "KeyVaultName": "key vault name",
-  "AzureADApplicationId": "app service object id in AAD"
+  "KeyVaultName": "key vault name"
 }
