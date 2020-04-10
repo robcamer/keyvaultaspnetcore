@@ -118,25 +118,6 @@ namespace KeyVaultTest
                     Configuration["AzureSecurityGroup:CoalitionAdminObjectId"]));
             });
 
-            //services.AddAuthorization(options =>
-            //{
-            //    options.AddPolicy("coalition-read",
-            //        policyBuilder => policyBuilder.RequireClaim("groups",
-            //        "bead8c38-cbd4-4c5c-913a-3db9d776ebad"));
-            //});
-            //services.AddAuthorization(options =>
-            //{
-            //    options.AddPolicy("coalition-edit",
-            //        policyBuilder => policyBuilder.RequireClaim("groups",
-            //        "a2454ce9-11c5-4af2-9f2a-5730591356ec"));
-            //});
-            //services.AddAuthorization(options =>
-            //{
-            //    options.AddPolicy("coalition-admin",
-            //        policyBuilder => policyBuilder.RequireClaim("groups",
-            //        "60f2493c-9efa-4985-b8c9-e8832a46ef56"));
-            //});
-
             // Used for pulling user info through DI HTTPContext
             services.AddHttpContextAccessor();
 
