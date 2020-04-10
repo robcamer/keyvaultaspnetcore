@@ -11,7 +11,7 @@ namespace KeyVaultTest
 
         public PrefixKeyVaultSecretManager(string prefix)
         {
-            _prefix = $"{prefix}-";
+            _prefix = $"{prefix}-"; //e.g. 'dev-', 'prod-', 'release22-', 'release23-'
         }
 
         public bool Load(SecretItem secret)

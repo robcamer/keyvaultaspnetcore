@@ -236,5 +236,10 @@ _Pvt_Extensions
 appsettings.json
 appsettings.Development.json
 
+<<<<<<< HEAD:.gitignore
+# VS
+.vs/
+=======
 # random
 .DS_Store
+>>>>>>> eac71d4c385a7ca0098cc27c9c3eb1c8f4dea14c:KeyVaultTest/.gitignore
