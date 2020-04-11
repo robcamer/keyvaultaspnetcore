@@ -7,9 +7,13 @@ let subdomain = parts[0];
 let hostname = subdomain.split(':')[0];
 let envClientId = '81e95df6-44ee-4c9c-b4be-170787b4a611';
 
-//if (hostname.includes('beta')) {
-//   envClientId = '1649eb38-f96c-4d9c-b88b-2b5a99d229c8';
-//}
+if (hostname.includes('beta')) {
+   envClientId = '1649eb38-f96c-4d9c-b88b-2b5a99d229c8';
+}
+
+if (hostname.includes('prod')) {
+    envClientId = '2bace2c7-3dae-4036-ba9c-2eaac0728b54';
+}
 
 // Configure AAD for Environment
 export const endpoint = envClientId;
